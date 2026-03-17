@@ -8,10 +8,10 @@ def price():
     3. El monto de la propina (10% del subtotal)
     4. El precio final (subtotal + propina)
     """
-    precio_base=input(100)
+    precio_base=100
     impuesto =float((100*21)/100)
     subtotal =float((precio_base + impuesto))
-    propina = float((0.1*100))
+    propina = float((0.1*subtotal))
     final = float((subtotal+propina))
 
     print(impuesto)
@@ -19,4 +19,3 @@ def price():
     print(propina)
     print(final)
 
-price()
